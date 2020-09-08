@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html id="tema" class="claro">
+    <head>
+        <title>Our Site</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport";>
+        <link rel="stylesheet" href="css/styles.css";>
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo"><img src="images/logo.png""></div>
+            <a href="#"><div>Home</div></a>
+            <a href="#"><div>About Us</div></a>
+            <a href="#"><div>Services</div></a>
+            <a href="#"><div>Contact</div></a>
+        </nav>
+
+        <div class="selector">
+            <a onclick="myFunctionClaro()" class="lightlink">Claro</a> | <a onclick="myFunctionOscuro()" class="darklink">Oscuro</a>
+        </div>
+
+        <div class="cuerpo">
+            <div>
+                <h2>Column 1</h2>
+                <img src="images/imagen1.jpg" style="width: 100%;">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt consequat consequat. Ut congue vitae nisi et placerat. Pellentesque imperdiet lacinia pretium. Nulla at metus non nunc venenatis feugiat. Nullam faucibus, lectus et lacinia finibus, arcu mauris maximus lacus, ut commodo odio nibh sit amet augue. Nunc quis eros tellus. Vestibulum vitae varius neque, vitae vehicula nisi. Aenean dapibus magna non arcu semper feugiat. Nam sit amet eleifend dui. Sed non fringilla eros. Donec iaculis mi et orci sollicitudin, feugiat tristique metus tempus. Morbi a lorem nulla. Morbi tempor varius enim euismod sodales. Integer consectetur, lectus quis faucibus ullamcorper, ipsum justo pellentesque lectus, sit amet pharetra dui ligula ac purus. </p>
+            </div>
+
+            <div>
+                <h2>Column 2</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt consequat consequat. Ut congue vitae nisi et placerat. Pellentesque imperdiet lacinia pretium. Nulla at metus non nunc venenatis feugiat. Nullam faucibus, lectus et lacinia finibus, arcu mauris maximus lacus, ut commodo odio nibh sit amet augue. Nunc quis eros tellus. Vestibulum vitae varius neque, vitae vehicula nisi. Aenean dapibus magna non arcu semper feugiat. Nam sit amet eleifend dui. Sed non fringilla eros. Donec iaculis mi et orci sollicitudin, feugiat tristique metus tempus. Morbi a lorem nulla. Morbi tempor varius enim euismod sodales. Integer consectetur, lectus quis faucibus ullamcorper, ipsum justo pellentesque lectus, sit amet pharetra dui ligula ac purus. </p>
+            </div>
+
+            <div>
+                <h2>Column 3</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt consequat consequat. Ut congue vitae nisi et placerat. Pellentesque imperdiet lacinia pretium. Nulla at metus non nunc venenatis feugiat. Nullam faucibus, lectus et lacinia finibus, arcu mauris maximus lacus, ut commodo odio nibh sit amet augue. Nunc quis eros tellus. Vestibulum vitae varius neque, vitae vehicula nisi. Aenean dapibus magna non arcu semper feugiat. Nam sit amet eleifend dui. Sed non fringilla eros. Donec iaculis mi et orci sollicitudin, feugiat tristique metus tempus. Morbi a lorem nulla. Morbi tempor varius enim euismod sodales. Integer consectetur, lectus quis faucibus ullamcorper, ipsum justo pellentesque lectus, sit amet pharetra dui ligula ac purus. </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright 2020 All Rights Reserved
+        </div>
+
+        <script type="text/javascript">
+            function myFunctionOscuro() {
+                let element = document.getElementById("tema");
+                element.classList.remove("claro");
+                element.classList.add("oscuro");
+            }
+            function myFunctionClaro() {
+                let element = document.getElementById("tema");
+                element.classList.remove("oscuro");
+                element.classList.add("claro");
+            }
+        </script>
+    </body>
+</html>
