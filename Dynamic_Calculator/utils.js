@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", (_) => {
+document.addEventListener("DOMContentLoaded", () => {
     let item_name = document.querySelector("#item-name");
     let item_value = document.querySelector("#item-value");
+    document.getElementById("add-item").addEventListener("click", )
 });
 
 function get_element_li (name, price) {
@@ -9,6 +10,7 @@ function get_element_li (name, price) {
 
 let add_item_to_list_with_template = (template_function) => {
   return (event) => {
+
     /*
       add the item to the list
       add event listener to the button inside the element just added with the remove_item function
