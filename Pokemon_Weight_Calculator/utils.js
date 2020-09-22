@@ -2,7 +2,7 @@ let total = 0;
 
 let total_calc = (prix) => {
     total += prix;
-    document.getElementById("total-show").innerText = parseFloat(total).toFixed(2);
+    document.getElementById("total-show").innerText = parseFloat(total).toFixed(0);
 }
 
 let deleteItem = (event) => {
@@ -43,6 +43,7 @@ document.getElementById("add-poke").addEventListener("click", () => {
             nPoke.appendChild(delBut);
 
             delBut.addEventListener("click", deleteItem);
+            document.getElementById("pokeName").value = "";
             total_calc(Number(sWeight.name));
 
         }).catch((err) => {
