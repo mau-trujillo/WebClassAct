@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First partial exam</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./utils.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", (_) => {
+            document.getElementById("add-item").addEventListener("click", add_item_to_list_with_template(get_element_li));
+        });
+    </script>
+    <style>
+        .added-pokemon {
+            border: 1px solid #000000;
+            width: 250px;
+            margin: 5px 5px;
+            float: left;
+              list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        name: <input type="text" id="pokemon-name"  placeholder="or id">
+        <button id="add-item"> add</button>
+    </div>
+    <ul class="items">
+
+    </ul>
+    <div id="error"></div>
+</body>
+
+</html>
